@@ -1,0 +1,29 @@
+-- explore_events
+SELECT *
+FROM `game-analytics-project-495120.game_data.events`
+LIMIT 10;
+
+-- dau_by_day
+SELECT 
+  event_date,
+  COUNT(DISTINCT user_id) AS dau
+FROM `game-analytics-project-495120.game_data.events`
+GROUP BY event_date
+ORDER BY event_date;
+
+-- retention_cohort
+SELECT
+  signup_date,
+  event_date,
+  COUNT(DISTINCT user_id) AS active_users
+FROM `game-analytics-project-495120.game_data.events`
+GROUP BY signup_date, event_date
+ORDER BY signup_date, event_date;
+
+-- revenue_by_day
+SELECT 
+  event_date,
+  SUM(revenue) AS total_revenue
+FROM `game-analytics-project-495120.game_data.events`
+GROUP BY event_date
+ORDER BY event_date;
