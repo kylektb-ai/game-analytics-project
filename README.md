@@ -1,4 +1,4 @@
-## Game Analytics Project (BigQuery + SQL)
+# Game Analytics Project (BigQuery + SQL)
 
 ## Overview
 This project analyses player behaviour in a simulated game dataset using SQL in BigQuery.  
@@ -47,7 +47,7 @@ Built cohort-based retention using signup date vs event activity to measure user
 
 ## Files
 - `queries.sql` → all SQL used for analysis  
-- `dashboard.jpg` → Looker Studio visual dashboard  
+- `game_analytics_dashboard.jpg` → Looker Studio visual dashboard  
 
 ---
 
