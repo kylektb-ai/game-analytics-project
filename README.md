@@ -1,27 +1,55 @@
-# Game Analytics Project (BigQuery)
+## Game Analytics Project (BigQuery + SQL)
 
 ## Overview
-This project analyses player behaviour using SQL in BigQuery.
+This project analyses player behaviour in a simulated game dataset using SQL in BigQuery.  
+The goal is to understand user engagement, revenue patterns, and retention over time.
+
+---
 
 ## Dataset
-Simulated player event data including:
+The dataset contains user-level game events including:
 - user_id
-- event_date
 - signup_date
+- event_date
+- event_type (session, level_up, purchase)
 - revenue
-- event_type
+- level
 
-## Analysis
-- Daily Active Users (DAU)
-- Cohort-based retention analysis
-- Revenue trends
+---
+
+## Key Analyses
+
+### 1. Daily Active Users (DAU)
+Tracked the number of unique users active per day to measure engagement trends.
+
+### 2. Revenue Analysis
+Aggregated daily in-game purchases to understand monetisation patterns over time.
+
+### 3. Retention Analysis
+Built cohort-based retention using signup date vs event activity to measure user return behaviour.
+
+---
 
 ## Key Insights
-- Measured player engagement using DAU
-- Analysed user retention over time after signup
-- Evaluated monetisation through daily revenue
+- Strong drop-off in user engagement shortly after signup  
+- Retention decreases significantly over time  
+- Revenue is concentrated in early user lifecycle stages  
+- Early engagement is the strongest predictor of long-term retention  
 
-## Tools
-- BigQuery
-- SQL
-- GitHub
+---
+
+## Tools Used
+- BigQuery (SQL)
+- Google Cloud Platform
+- Data aggregation and cohort analysis
+
+---
+
+## Files
+- `queries.sql` → all SQL used for analysis  
+- `dashboard.jpg` → Looker Studio visual dashboard  
+
+---
+
+## Dashboard
+![Game Analytics Dashboard](game_analytics_dashboard.jpg)
