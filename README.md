@@ -52,4 +52,4 @@ Built cohort-based retention using signup date vs event activity to measure user
 ---
 
 ## Dashboard
-![Game Analytics Dashboard](game_analytics_dashboard.jpg)
+![Game Analytics Dashboard](Game_Analytics_Dashboard.jpg)
